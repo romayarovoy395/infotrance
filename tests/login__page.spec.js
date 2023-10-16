@@ -6,6 +6,6 @@ test('first__Test', async ({ page }) => {
   await page
     .getByLabel('Електронна адреса')
     .fill('secretary@certification.test.ua');
-  await page.getByLabel('Пароль').fill('dianetdev');
-  await page.locator('button').click();
+  await page.getByLabel('Пароль').nth(0).fill('dianetdev');
+  await page.getByText('Увійти').click();
 });
