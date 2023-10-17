@@ -13,6 +13,6 @@ test('login__auditor', async ({ page }) => {
   );
   await page.getByText('Створити заявку').click();
   await expect(page).toHaveURL(
-    'https://certification-test.stg.disoft.dev/statements/create'
+    'https://certification-test.stg.disoft.dev/statement/create'
   );
 });
