@@ -60,4 +60,5 @@ test('login__auditor__unvalidate__vincode', async ({ page }) => {
   await page.locator('.otp-field-box--8').fill(" ")
   await page.getByRole('button', {name:'Далі'}).click();
   await expect(page.getByText('Невірний формат')).toBeVisible();
+  await expect(page.getByText('Невірний формат')).toBeVisible();
 });
